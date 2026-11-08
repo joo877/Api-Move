@@ -1,0 +1,28 @@
+section {
+  background-color: rgb(3, 3, 3);
+}
+
+h1 {
+  color: rgb(177, 17, 17);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 600px;
+}
+p {
+  color: rgb(184, 177, 177);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400px;
+}
+
+h4 {
+  color: rgb(184, 177, 177);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  font-style: italic;
+}
+.col-md-3 {
+  cursor: pointer;
+}

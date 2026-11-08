@@ -1,0 +1,40 @@
+<section class="p-3">
+  <h1 class="text-center fw-bolder">All movies</h1>
+  <p class="text-center">
+    We hope you <span class="text-danger">enjoy watching.</span>
+  </p>
+
+  <div class="container">
+    <div class="row">
+      @for (movie of moviesList; track movie.id) {
+
+      <div class="col-md-3 g-4">
+        <div class="card h-100 bg-black border-1 border-danger">
+          <img
+            class="card-img-top w-100"
+            [src]="imgBasic + movie.poster_path"
+            [alt]="movie.title"
+          />
+          <div class="card-body">
+            @if (movie.title) {
+            <h4 class="card-title">
+              <span class="text-danger">Title</span> :
+              {{ movie.title }}
+            </h4>
+            } @else {
+            <h4 class="card-title">
+              <span class="text-danger">Name</span> : {{ movie.name }}
+            </h4>
+            }
+            <p class="card-text">
+              <span class="text-danger fw-bolder">Overview</span> :
+              {{ movie.overview.split(" ", 10).join(" ") }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>
